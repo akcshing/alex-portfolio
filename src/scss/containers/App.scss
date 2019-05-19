@@ -1,0 +1,35 @@
+html {
+    font-size: 16px;
+}
+
+header {
+    border: solid 1px lime;
+
+    .logo {
+        width: rem-calc(50);
+    }
+}
+
+main {
+    border: solid 1px lime;
+    display: flex;
+    justify-content: space-between;
+
+    .box {
+        font-size: 1.25rem;
+        border: solid 1px red;
+        width: rem-calc(100);
+        padding: rem-calc(10);
+    }
+
+}
+
+footer {
+    border: solid 1px lime;
+}
+
+.page-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: rem-calc(20);
+}
