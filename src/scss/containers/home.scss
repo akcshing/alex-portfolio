@@ -1,14 +1,14 @@
 .welcome-container {
     height: 90vh;
     position: relative;
-    border-bottom: solid 0.5rem rgb(226, 226, 226);
+    border-bottom: solid 0.5rem var(--lightColor);
     .title{
         position: absolute;
         bottom: rem-calc(25);
         font-weight: 800;
         line-height: rem-calc(140);
         font-size: rem-calc(160);
-        color: rgb(226, 226, 226);
+        color: var(--lightColor);
         text-transform: uppercase;
         text-align: center;
     }
@@ -20,7 +20,7 @@
     justify-content: space-between;
     font-size: 1.25rem;
     
-    color:  rgb(226, 226, 226);
+    color: var(--lightColor);
     .about-tile {
         text-align: center;
         width: rem-calc(130);

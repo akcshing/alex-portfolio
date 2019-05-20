@@ -1,9 +1,20 @@
 html {
     font-size: 16px;
-    background-color: rgba(6, 5, 48, 0.548);
-    color: rgb(226, 226, 226);
-    
+    // background-color: rgba(6, 5, 48, 0.548);
+    // color: rgb(226, 226, 226);
+    background: var(--lightBg);
+    color: var(--lightColor);
+  --lightBtn: #FE016C;
+  --lightBg: #fff;
+  --lightColor: #232323;
 }
+
+html[data-theme='dark'] {
+    background: var(--lightBg);
+   --lightBtn: #FFBD07;
+   --lightBg: #232323;
+   --lightColor: #fff;
+ }
 
 header {
     // border: solid 1px lime;

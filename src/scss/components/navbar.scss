@@ -1,6 +1,6 @@
 .navbar {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     width: rem-calc(1280);
     position: fixed;
     top: 0;
@@ -20,15 +20,19 @@
         
         a {
             text-decoration: none;
-            color: rgb(226, 226, 226);
+            // color: rgb(226, 226, 226);
+            color: var(--lightColor);
         }
         .navbar-item:hover{
             transform: scale(1.2, 1.2);
             transition: all .5s ease-in-out;
           }
         a:visited {
-            color: rgb(226, 226, 226);
+            // color: rgb(226, 226, 226);
         }
     
+    }
+    .toggle-container {
+        text-align: center;
     }
 }

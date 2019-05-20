@@ -17,7 +17,24 @@ class HomeContainer extends Component {
 
 
     componentDidMount() {
+        let checkbox = document.querySelector('input[name=mode]');
 
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                // trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+            } else {
+                // trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            }
+        })
+
+        // let trans = () => {
+        //     document.documentElement.classList.add('transition');
+        //     window.setTimeout(() => {
+        //         document.documentElement.classList.remove('transition');
+        //     }, 1000)
+        // }
     }
 
     handleClick = (chosen) => {
@@ -34,15 +51,15 @@ class HomeContainer extends Component {
                 <div className="welcome-container" >
                     <h1 className="title">Alex Shing Portfolio</h1>
                 </div>
-                
+
                 <div className="about-container" >
-                    <AboutTile about="About Me" icon = {aboutme} onClick = {this.handleClick}/>
-                    <AboutTile about="Product Design" icon = {design} onClick = {this.handleClick} />
-                    <AboutTile about="Sushi" icon = {sushi} onClick = {this.handleClick} />
-                    <AboutTile about="CodeClan" icon = {coding} onClick = {this.handleClick} />
+                    <AboutTile about="About Me" icon={aboutme} onClick={this.handleClick} />
+                    <AboutTile about="Product Design" icon={design} onClick={this.handleClick} />
+                    <AboutTile about="Sushi" icon={sushi} onClick={this.handleClick} />
+                    <AboutTile about="CodeClan" icon={coding} onClick={this.handleClick} />
                 </div>
 
-                <AboutDetail selected = {this.state.selected} />
+                <AboutDetail selected={this.state.selected} />
             </main>
         )
     }
