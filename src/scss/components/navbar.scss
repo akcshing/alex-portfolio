@@ -1,0 +1,33 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: rem-calc(1280);
+    position: fixed;
+    top: 0;
+    padding: rem-calc(20) 0;
+    // background-color: blue;
+    z-index: 2;
+    
+    .logo {
+        width: rem-calc(50);
+    }
+
+    .navbar-list {
+        display: flex;
+        justify-content: space-around;
+        font-size: rem-calc(20);
+        
+        
+        a {
+            text-decoration: none;
+        }
+        .navbar-item:hover{
+            transform: scale(1.2, 1.2);
+            transition: all .5s ease-in-out;
+          }
+        a:visited {
+            color: rgb(226, 226, 226);
+        }
+    
+    }
+}

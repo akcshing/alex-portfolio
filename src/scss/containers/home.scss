@@ -1,0 +1,14 @@
+.welcome-container {
+    height: 90vh;
+    position: relative;
+    .title{
+        position: absolute;
+        bottom: rem-calc(25);
+        font-weight: 800;
+        line-height: rem-calc(160);
+        font-size: rem-calc(160);
+        color: rgb(226, 226, 226);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
