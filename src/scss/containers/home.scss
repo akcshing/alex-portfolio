@@ -1,6 +1,7 @@
 .welcome-container {
     height: 90vh;
     position: relative;
+    border-bottom: solid 0.5rem rgb(226, 226, 226);
     .title{
         position: absolute;
         bottom: rem-calc(25);
@@ -22,8 +23,10 @@
     color:  rgb(226, 226, 226);
     .about-tile {
         text-align: center;
-        // border-radius: 0.5rem;
         width: rem-calc(130);
+        // border-radius: 0.5rem;
+        // height: rem-calc(130);
+        // box-shadow: 0 0.5rem 0.5rem;
     }
 
     .about-tile:hover {
@@ -36,6 +39,14 @@
     .about-icon {
         width: 5rem;
 
+    }
+}
+
+.about-detail-container {
+    text-align: center;
+    h2 {
+        
+        font-size: 2.5rem;
     }
 }
 

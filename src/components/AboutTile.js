@@ -10,9 +10,6 @@ const AboutTile = (props) => {
         <div className="about-tile" onClick = {onClick} >
             <img className="about-icon" src={props.icon}></img>
             <h3 className = "tile-header">{props.about}</h3>
-            {/* //add a button/link that sets state of homecontainer
-            //also redirects you to aboutdetail element */}
-            
         </div>
     )
 }
