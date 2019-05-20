@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import AboutDetail from "../components/AboutDetail";
+import AboutTile from "../components/AboutTile";
 
 class HomeContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            selected: null
         }
     }
 
@@ -19,18 +21,13 @@ class HomeContainer extends Component {
                 <div className="welcome-container" >
                     <h1 className="title">Alex Shing Portfolio</h1>
                 </div>
-
-                <div className="welcome-container" >
-                    <div>my life</div>
-                    <div>product design engineering</div>
-                    <div>sushi</div>
-                    <div>codeclan</div>
+                <AboutDetail selected = {this.state.selected} />
+                <div className="about-container" >
+                    <AboutTile about="my life" />
+                    <AboutTile about="product design engineering" />
+                    <AboutTile about="sushi" />
+                    <AboutTile about="codeclan" />
                 </div>
-
-                <div className="welcome-container" >
-                    
-                </div>
-
             </main>
         )
     }
