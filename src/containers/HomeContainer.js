@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import AboutDetail from "../components/AboutDetail";
 import AboutTile from "../components/AboutTile";
+import aboutme from "../images/aboutme.png";
+import design from "../images/design.png";
+import sushi from "../images/sushi.png";
+import coding from "../images/coding.png";
 
 class HomeContainer extends Component {
     constructor(props) {
@@ -8,11 +12,20 @@ class HomeContainer extends Component {
         this.state = {
             selected: null
         }
+        this.handleClick = this.handleClick.bind(this);
     }
 
 
     componentDidMount() {
 
+    }
+
+    handleClick = (chosen) => {
+        this.setState(
+            {
+                selected: chosen
+            }
+        )
     }
 
     render() {
@@ -21,13 +34,15 @@ class HomeContainer extends Component {
                 <div className="welcome-container" >
                     <h1 className="title">Alex Shing Portfolio</h1>
                 </div>
-                <AboutDetail selected = {this.state.selected} />
+                
                 <div className="about-container" >
-                    <AboutTile about="my life" />
-                    <AboutTile about="product design engineering" />
-                    <AboutTile about="sushi" />
-                    <AboutTile about="codeclan" />
+                    <AboutTile about="About Me" icon = {aboutme} onClick = {this.handleClick}/>
+                    <AboutTile about="Product Design" icon = {design} onClick = {this.handleClick} />
+                    <AboutTile about="Sushi" icon = {sushi} onClick = {this.handleClick} />
+                    <AboutTile about="CodeClan" icon = {coding} onClick = {this.handleClick} />
                 </div>
+
+                <AboutDetail selected = {this.state.selected} />
             </main>
         )
     }

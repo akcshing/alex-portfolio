@@ -5,10 +5,43 @@
         position: absolute;
         bottom: rem-calc(25);
         font-weight: 800;
-        line-height: rem-calc(160);
+        line-height: rem-calc(140);
         font-size: rem-calc(160);
         color: rgb(226, 226, 226);
         text-transform: uppercase;
         text-align: center;
     }
+}
+
+.about-container {
+    display: flex;
+    padding: 3rem 10rem;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    
+    color:  rgb(226, 226, 226);
+    .about-tile {
+        text-align: center;
+        // border-radius: 0.5rem;
+        width: rem-calc(130);
+    }
+
+    .about-tile:hover {
+        // background-color: rgba(195, 195, 216, 0.4);
+        transform: scale(1.2, 1.2);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .about-icon {
+        width: 5rem;
+
+    }
+}
+
+.design-green {
+    color: #2ECC71;
+}
+.sushi-yellow {
+    color: #F1C40F;
 }
