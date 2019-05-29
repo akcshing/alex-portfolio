@@ -1,49 +1,44 @@
 html {
-    font-size: 16px;
-    // background-color: rgba(6, 5, 48, 0.548);
-    // color: rgb(226, 226, 226);
-    background: var(--lightBg);
-    color: var(--lightColor);
-  --lightBtn: #FE016C;
-  --lightBg: #fff;
-  --lightColor: #232323;
+	min-width: 360px;
+	font-size: 16px;
+	// background-color: rgba(6, 5, 48, 0.548);
+	// color: rgb(226, 226, 226);
+	background: var(--lightBg);
+	color: var(--lightColor);
+	--lightBtn: #FE016C;
+	--lightBg: #fff;
+	--lightColor: #232323;
 }
 
 html[data-theme='dark'] {
-    background: var(--lightBg);
-   --lightBtn: #FFBD07;
-   --lightBg: #232323;
-   --lightColor: #fff;
+	background: var(--lightBg);
+	 --lightBtn: #FFBD07;
+	 --lightBg: #232323;
+	 --lightColor: #fff;
  }
 
 header {
-    // border: solid 1px lime;
-    height: 3rem;
-    // background-color: pink;
+	height: $header-height;
 }
 
 main {
-    // border: solid 1px lime;
-    
-    // display: flex;
-    justify-content: space-between;
-
-    .box {
-        font-size: 1.25rem;
-        border: solid 1px red;
-        width: rem-calc(100);
-        padding: rem-calc(10);
-    }
-
+	min-height: calc(100vh - #{$header-height} - #{$footer-height})
 }
 
 footer {
-    // border: solid 1px lime;
+	text-align: center;
+	padding: 0.5rem;
 }
 
 .page-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    // padding: 0 rem-calc(50);
-    
+	max-width: 1280px;
+	margin: 0 auto;
+	// padding: 0 rem-calc(50);
+	
+	.content-container {
+		h1 {
+			font-size: 4rem;
+			margin-bottom: 2rem;
+		}
+	}
 }

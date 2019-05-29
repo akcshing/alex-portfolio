@@ -4,28 +4,28 @@ import logo from '../logo.svg';
 
 
 const NavBar = (props) => {
-    
-    return (
-        <div className="navbar">
-            <Link to="/">
-                <img src={logo} className="logo" alt="logo" />
-            </Link>
-            <div class="toggle-container">
-                <h1>Light / Dark Mode</h1>
-                <input class="container_toggle" type="checkbox" id="switch" name="mode" />
-                <label for="switch">Toggle</label>
-            </div>
-            <ul className="navbar-list">
-                <li className="navbar-item">
-                    <Link to="/about">About</Link>
-                </li>
-                <li className="navbar-item">
-                    <Link to="/projects">Projects</Link>
-                </li>
-            </ul>
+	
+	return (
+		<div className="navbar">
+			<Link to="/">
+				<img src={logo} className="logo" alt="logo" />
+			</Link>
+			<div className="toggle-container">
+				<h1>Light / Dark Mode</h1>
+				<input className="container_toggle" type="checkbox" id="switch" name="mode" />
+				<label htmlFor="switch">Toggle</label>
+			</div>
+			<ul className="navbar-list">
+				<li className="navbar-item">
+					<Link to="/about">About</Link>
+				</li>
+				<li className="navbar-item">
+					<Link to="/projects">Projects</Link>
+				</li>
+			</ul>
 
-        </div>
-    )
+		</div>
+	)
 }
 
 export default NavBar;
