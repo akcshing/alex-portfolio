@@ -7,10 +7,13 @@ import sushi from "../../images/sushi.png";
 import coding from "../../images/coding.png";
 
 const aboutContent = {
-	'About Me': 'blah blah blah 1',
-	'Product Design': 'blah blah blah 2',
-	'Sushi': 'blah blah blah 3',
-	'CodeClan': 'blah blah blah 4',
+	'About Me': `I'm a Codeclan graduat from Edinburgh looking to start my career as a software developer. I love coding and learning about different and new technologies. When I'm not working, I enjoy gaming, cooking, playing table tennis and some beers in good company.`,
+
+	'Product Design': `I studied Product Design Engineering at Edinburgh Napier University. It helped hone my sense of design and eye for detail. My favourite module was Computer Aided Design, where we learned to build digital models and 3D print them.`,
+
+	'Sushi': `I worked as a Sushi Chef in Edinburgh for 3 years, starting as a kitchen porter and progressing to team leader in the kitchen. I'm proud to say that I'm able to prepare sashimi from a whole salmon, but my favourite part was definitely all the free sushi I could eat!`,
+
+	'CodeClan': `I graduated from Codeclan's Professional Software Development course in May. Along with the abundant number of new skills I've picked up, I feel the experience developed me as a person, giving me more confidence in myself. My favourite take away from Codeclan is definitely all the amazing people I've met and the great friendships I've made.`,
 }
 
 class HomeContainer extends Component {
@@ -19,6 +22,7 @@ class HomeContainer extends Component {
 		this.state = {
 			selected: null
 		}
+		this.scrollToMyRef = this.scrollToMyRef.bind(this)
 		this.handleClick = this.handleClick.bind(this);
 	}
 
@@ -43,12 +47,15 @@ class HomeContainer extends Component {
 		// }
 	}
 
-	handleClick = (chosen, ) => {
+	scrollToMyRef = () => window.scrollTo(0, 1000)
+
+	handleClick = (chosen) => {
 		this.setState(
 			{
 				selected: chosen,
-			}
-		)
+			}, () => {
+				this.scrollToMyRef();
+			})
 	}
 
 	render() {

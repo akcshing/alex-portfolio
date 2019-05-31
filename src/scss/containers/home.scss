@@ -1,7 +1,7 @@
 .welcome-container {
 	height: calc(100vh - #{$header-height});
 	position: relative;
-	border-bottom: solid 0.5rem var(--lightColor);
+	border-bottom: solid 0.3rem var(--lightColor);
 	.title{
 		position: absolute;
 		bottom: rem-calc(25);
@@ -65,9 +65,18 @@
 
 .about-detail-container {
 	text-align: center;
-	h2 {
+	p {
+		text-align: left;
+		font-size: 1.5rem;
+		max-width: rem-calc(960);
+		margin: auto;
+		margin-bottom: 1rem;
+		padding: 0 1rem;
 		
-		font-size: 2.5rem;
+		@media only screen and (max-width: 768px) {
+			font-size: rem-calc(20);
+			// line-height: 5rem;
+		}
 	}
 }
 

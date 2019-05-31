@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../logo.svg';
+
 
 
 const NavBar = (props) => {
@@ -8,7 +8,7 @@ const NavBar = (props) => {
 	return (
 		<div className="navbar">
 			<Link to="/">
-				<img src={logo} className="logo" alt="logo" />
+				<a className="home-link">AKCS</a>
 			</Link>
 			<div className="toggle-container">
 				<h1>Light / Dark Mode</h1>
