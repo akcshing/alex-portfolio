@@ -7,7 +7,7 @@ import sushi from "../../images/sushi.png";
 import coding from "../../images/coding.png";
 
 const aboutContent = {
-	'About Me': `I'm a Codeclan graduat from Edinburgh looking to start my career as a software developer. I love coding and learning about different and new technologies. When I'm not working, I enjoy gaming, cooking, playing table tennis and some beers in good company.`,
+	'About Me': `I'm a Codeclan graduate from Edinburgh looking to start my career as a software developer. I love coding and learning about different and new technologies. When I'm not working, I enjoy gaming, cooking, playing table tennis and some beers in good company.`,
 
 	'Product Design': `I studied Product Design Engineering at Edinburgh Napier University. It helped hone my sense of design and eye for detail. My favourite module was Computer Aided Design, where we learned to build digital models and 3D print them.`,
 
