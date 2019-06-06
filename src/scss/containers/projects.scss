@@ -1,6 +1,10 @@
 .project-container {
 	max-width: 1280px;
 
+	h3 {
+		color: var(--lightBtn);
+	}
+
 	.project-images {
 		display: flex;
 		flex-wrap: wrap;
@@ -40,11 +44,13 @@
 	
 	.project-title {
 		padding: 0 3rem;
+		// box-shadow: 0px 15px 10px -20px rgba(17, 17, 17, 0.5); 
 	}
 
 	.project-info {
 		display: flex;
 		padding: 0 3rem;
+		box-shadow: 0px 15px 10px -20px rgba(17, 17, 17, 0.5); 
 
 		@media only screen and (max-width: 1024px) {
 			flex-wrap: wrap;
@@ -54,7 +60,7 @@
 			width: 50%;
 			font-size: rem-calc(20);
 			margin-right: 5%;
-
+			
 			@media only screen and (max-width: 1024px) {
 				margin: 0;
 				width: 100%;
@@ -130,5 +136,6 @@
 
 	span {
 		color: var(--lightBtn);
+		font-weight: bold;
 	}
 }

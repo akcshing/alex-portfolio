@@ -1,7 +1,8 @@
 .welcome-container {
 	height: calc(100vh - #{$header-height});
 	position: relative;
-	border-bottom: solid 0.3rem var(--lightColor);
+	border-bottom: solid 0.3rem var(--lightBtn);
+
 	.title{
 		position: absolute;
 		bottom: rem-calc(25);
@@ -33,11 +34,13 @@
 	color: var(--lightColor);
 	
 	.about-tile {
+		background: none;
+ 		border: none;
 		text-align: center;
-		width: rem-calc(130);
-		// border-radius: 0.5rem;
-		// height: rem-calc(130);
-		// box-shadow: 0 0.5rem 0.5rem;
+		width: 20%;
+		color: var(--lightColor);
+		cursor: pointer;
+		
 		@media only screen and (max-width: 768px) {
 			width: 50%;
 
@@ -46,11 +49,22 @@
 			}
 		}
 
-		&:hover {
-			// background-color: rgba(195, 195, 216, 0.4);
-			transform: scale(1.2, 1.2);
-			transition: all .5s ease-in-out;
-			cursor: pointer;
+		@media only screen and (min-width: 768px) {
+			&:hover {
+				// background-color: rgba(195, 195, 216, 0.4);
+				transform: scale(1.2, 1.2);
+				transition: all .5s ease-in-out;
+				
+			}
+		}
+
+		&:focus {
+			outline: none;
+			color: var(--lightBtn);
+		}
+
+		&:active {
+			transform: scale(0.99);
 		}
 	}
 

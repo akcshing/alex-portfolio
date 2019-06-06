@@ -1,8 +1,8 @@
 .navbar {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	// display: flex;
-	// justify-content: space-between;
+	// display: grid;
+	// grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 	max-width: rem-calc(1280);
 	position: fixed;
@@ -37,8 +37,7 @@
 			a {
 				text-align: right;
 				&:hover {
-					transform: scale(1.05, 1.05);
-					transition: all .5s ease-in-out;
+					color: var(--lightBtn);
 				}
 			}
 			
