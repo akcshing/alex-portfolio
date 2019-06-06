@@ -8,17 +8,17 @@ const NavBar = (props) => {
 	return (
 		<div className="navbar">
 			<Link to="/">
-				<a className="home-link">AKCS</a>
+				<a href="/" className="home-link">AKCS</a>
 			</Link>
 			<div className="toggle-container">
-				<h1>Light / Dark Mode</h1>
+				<span>Light / Dark Mode</span>
 				<input className="container_toggle" type="checkbox" id="switch" name="mode" />
 				<label htmlFor="switch">Toggle</label>
 			</div>
 			<ul className="navbar-list">
-				<li className="navbar-item">
+				{/* <li className="navbar-item">
 					<Link to="/about">About</Link>
-				</li>
+				</li> */}
 				<li className="navbar-item">
 					<Link to="/projects">Projects</Link>
 				</li>
