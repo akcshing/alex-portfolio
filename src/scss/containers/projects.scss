@@ -1,48 +1,65 @@
 .project-container {
 	max-width: 1280px;
-	
+
 	img {
 		width: 100%;
 		margin: 3rem auto;
 		box-shadow: 0px 15px 10px -10px rgba(17, 17, 17, 0.5); 
 
-		@media only screen and (max-width: 768px) {
-			width: 100%;
+		@media only screen and (max-width: 1024px) {
 			margin: 1rem auto;
 		}
-	}
 
-	@media only screen and (max-width: 768px) {
-		margin: 0 1rem;
+		@media only screen and (max-width: 768px) {
+			margin: 0.5rem auto;
+		}
+	}
+	
+	.project-title {
+		padding: 0 1rem;
 	}
 
 	.project-info {
 		display: flex;
-		flex-wrap: wrap;
+		padding: 0 1rem;
+
+		@media only screen and (max-width: 1024px) {
+			flex-wrap: wrap;
+		}
 
 		.project-info-p {
-			width: rem-calc(540);
+			width: 50%;
 			font-size: rem-calc(20);
-			margin-right: 10rem;
+			margin-right: 5%;
 
-			p {
-				margin-bottom: 0.5rem;
+			@media only screen and (max-width: 1024px) {
+				margin: 0 auto;
+				width: 80%;
+				margin-bottom: 1rem;
+				box-shadow: 0px 15px 10px -20px rgba(17, 17, 17, 0.5); 
 			}
 
 			@media only screen and (max-width: 768px) {
 				font-size: 1rem;
 				width: 100%;
 				margin-right: 0;
-				margin-bottom: 1rem;
-				box-shadow: 0px 15px 10px -20px rgba(17, 17, 17, 0.5); 
 			}
+
+			p {
+				margin-bottom: 0.5rem;
+			}
+
+			// @media only screen and (min-width: 768px) and (max-width: 1024px) {
+			// 	font-size: 1.5rem;
+			// }
+			
 		}
 
 		.project-info-ul {
 			font-size: 1.25rem;
 			font-weight: bold;
 
-			@media only screen and (max-width: 768px) {
+			@media only screen and (max-width: 1024px) {
 				text-align: center;
 				width: 100%;
 				font-size: 1rem;
@@ -53,18 +70,32 @@
 
 			ul {
 				margin-bottom: 2rem;
-				@media only screen and (max-width: 768px) {
+
+				@media only screen and (max-width: 1024px) {
+					font-size: rem-calc(20);
 					display: flex;
 					flex-wrap: wrap;
+					width: 50%;
+					margin: 0 auto;
+					margin-bottom: 1rem;
 				}
+
+				@media only screen and (max-width: 768px) {
+					font-size: 1rem;
+				}
+				
 			}
 
 			li {
 				margin-bottom: rem-calc(4);
-				@media only screen and (max-width: 768px) {
-					width: 50%
 
+				@media only screen and (max-width: 1024px) {
+					width: 50%;
 				}
+			}
+			
+			a {
+				display: hide;
 			}
 		}
 	}
