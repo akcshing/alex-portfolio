@@ -22,8 +22,8 @@ const Projects = (props) => (
 						<li>Ruby</li>
 						<li>Sinatra</li>
 						<li>PostgreSQL</li>
-						<li>RESTful API</li>
 						<li>TDD</li>
+						<li>RESTful API</li>
 					</ul>
 					<a href="https://github.com/akcshing/Spending_tracker_project">Check out the project on <span className="github-link">Github</span></a>
 				</div>
