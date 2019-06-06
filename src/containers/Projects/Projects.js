@@ -6,7 +6,10 @@ const Projects = (props) => (
 	<div className="content-container">
 		<h1>PROJECTS</h1>
 		<div className="project-container">
-			<img alt="transactions" src={transactions}></img>
+			<div className="project-images">
+				<img alt="transactions" src={transactions}></img>
+				<img alt="new-transactions" src={newtransaction}></img>
+			</div>
 			<div className="project-title">
 				<h2>Spending Tracker</h2>
 				<h3>A Full-Stack Web App.</h3>
@@ -28,7 +31,6 @@ const Projects = (props) => (
 					<a href="https://github.com/akcshing/Spending_tracker_project">Check out the project on <span className="github-link">Github</span></a>
 				</div>
 			</div>
-			<img alt="new-transactions" src={newtransaction}></img>
 		</div>
 	</div>
 );
