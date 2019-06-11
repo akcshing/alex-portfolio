@@ -53,9 +53,11 @@ class HomeContainer extends Component {
 		this.setState(
 			{
 				selected: chosen,
-			}, () => {
+			}
+			, () => {
 				this.scrollToMyRef();
-			})
+			}
+		)
 	}
 
 	render() {

@@ -1,10 +1,14 @@
 import React from "react";
 import transactions from "../../images/transactions.png";
 import newtransaction from "../../images/newtransaction.png";
+import ProjectTiles from "./ProjectTiles";
 
 const Projects = (props) => (
 	<div className="content-container">
 		<h1>PROJECTS</h1>
+
+		<ProjectTiles />
+
 		<div className="project-container">
 			<div className="project-images">
 				<img alt="transactions" src={transactions}></img>
